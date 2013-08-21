@@ -15,5 +15,12 @@ To test locally:
 
 Pages are found in `contents/`, as `.ejs` files.
 
+To deploy:
+
+    > npm install
+    > node ./scripts/build.js
+
+And it will build out the whole site into `build/`.
+
 
 [Wintersmith]: https://github.com/jnordberg/wintersmith
