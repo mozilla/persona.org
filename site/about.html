@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/.
+   - Source: https://github.com/mozilla/browserid/
+   - Current Commit: https://github.com/mozilla/browserid/commit/ab869cc
+-->
+<html LANG="en" dir="ltr">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="email=no" />
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <title>Mozilla Persona: About</title>
+</head>
+<body class="loading " >
+
+
+<div id="wrapper">
+
+    <header id="header" class="cf">
+        <a class="home" href="/">Persona Home</a>
+
+        <ul class="nav cf">
+            <li><a href="/about">How it works</a></li>
+
+            <!--
+            <li class="ifAuthenticated"><a href="/">Account</a></li>
+
+            <li class="ifNotAuthenticated"><a class="signIn" href="/signin">Sign In</a></li>
+            <li class="ifAuthenticated"><a class="signOut" href="/">Sign Out</a></li>
+            -->
+
+        </ul>
+    </header>
+
+<div id="content" class="display_always">
+    <div class="about">
+        <section class="simple-signon">
+            <h2 class="title">Simplified sign-on.</h2>
+            <article class="blurb">
+                <div class="info first">
+                    <h1>Persona replaces multiple passwords</h1>
+                    <p>Sites such as <a href="http://crossword.thetimes.co.uk/" target="_blank">The Times Crossword</a>, <a href="https://current.trovebox.com/" target="_blank">Trovebox</a> and <a href="https://www.voo.st/" target="_blank">Voost</a> use Persona instead of usernames to sign you in.</p><p>This means you only need one password to sign in to many sites.</p>
+                </div>
+
+                <div class="graphic">
+                    <img src="https://static.login.anosrep.org/v/a19e25d73e/pages/i/one-password-graphic.png" alt="One password to rule them all.">
+                </div>
+            </article>
+
+            <article class="blurb flexible">
+                <div class="graphic first">
+                    <img src="https://static.login.anosrep.org/v/e4389f7414/pages/i/flexible-graphic.png" alt="Use multiple email addresses">
+                </div>
+
+                <div class="info">
+                    <h1>Persona is flexible</h1>
+                    <p>Within Persona, your identity is your email address. You can use as many email addresses as you want, but you still only need one password.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="privacy">
+            <h2 class="title">Real privacy.</h2>
+
+            <article class="blurb half first" style="min-height: 195px; ">
+                <h1>Persona is proudly non-profit for you</h1>
+                <p>Persona is developed by Mozilla, a not-for-profit company trusted throughout the Web community. Our goal is to create technologies that balance an open Web platform with people's privacy.</p>
+            </article>
+            <article class="blurb half">
+                <h1>Persona preserves your privacy</h1>
+                <p>Persona does not track your activity around the Web. It creates a wall between signing you in and what you do once you're there. The history of what sites you visit is stored only on your own computer.</p>
+            </article>
+        </section>
+
+        <a href="https://developer.mozilla.org/docs/persona" class="developers" target="_blank"><img src="https://static.login.anosrep.org/v/3d9a496629/pages/i/developers-link.png" alt="Persona for developers"><span>Implement Persona on your site </span>Developer guides and API documentation</a>
+    </div><!-- #dashboard -->
+</div>
+
+
+
+</div>
+
+
+<footer style="position: absolute; bottom: 0;">
+    <ul class="cf">
+        <li>By the <a  href='http://identity.mozilla.com' target='_blank'>Identity Team</a> @ <a  href='https://mozilla.org' target='_blank'>Mozilla</a></li>
+        <li><a href="/en/privacy">Privacy &rarr;</a></li>
+        <li><a href="/en/tos">TOS &rarr;</a></li>
+        <li><a href="https://developer.mozilla.org/docs/persona" target="_blank">Developers &rarr;</a></li>
+        <li class="help"><a
+        href="https://support.mozilla.com/kb/what-is-persona-and-how-does-it-work" target="_blank">Need Help? &rarr;</a></li>
+    </ul>
+</footer>
+
+<script src="https://login.persona.org/include.js"></script>
+<script src="./js/jquery-1.10.2.min.js"></script>
+<script src="./js/about.js"></script>
+</body>
+</html>

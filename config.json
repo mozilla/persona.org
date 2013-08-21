@@ -1,0 +1,6 @@
+{
+  "defaultTemplate": "layout.ejs",
+  "plugins": [
+    "./plugins/ejs"
+  ]
+}

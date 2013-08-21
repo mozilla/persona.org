@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/.
+   - Source: https://github.com/mozilla/browserid/
+   - Current Commit: https://github.com/mozilla/browserid/commit/ab869cc
+-->
+<html LANG="en" dir="ltr">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="email=no" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Mozilla Persona: A Better Way to Sign In</title>
+</head>
+<body class="loading">
+
+<div id="wrapper">
+    <header id="header" class="cf">
+        <a class="home" href="/">Persona Home</a>
+
+        <ul class="nav cf">
+            <li><a href="/about">How it works</a></li>
+            <!--
+            <li class="ifAuthenticated"><a href="/">Account</a></li>
+
+            <li class="ifNotAuthenticated"><a class="signIn" href="/signin">Sign In</a></li>
+            <li class="ifAuthenticated"><a class="signOut" href="/">Sign Out</a></li>
+            -->
+
+        </ul>
+    </header>
+    <div id="hAlign" class="display_nonauth">
+      <div id="vAlign">
+          <div id="signUp">
+              <div id="card"><img src="https://static.login.anosrep.org/v/bc1d781d44/pages/i/slit.png"></div>
+
+              <h1 class="white headline-main">Connect with Mozilla Persona, the safest &amp; easiest way to sign in.</h1>
+              <p class="tour white">
+                <a href="/about" class="button create">Take the tour</a>
+              </p>
+          </div>
+      </div>
+    </div>
+
+
+</div>
+
+<footer style="position: absolute; bottom: 0;">
+    <ul class="cf">
+        <li>By the <a href="http://identity.mozilla.com" target="_blank">Identity Team</a> @ <a %s>Mozilla</a></li>
+        <li><a href="/privacy">Privacy &rarr;</a></li>
+        <li><a href="/tos">TOS &rarr;</a></li>
+        <li><a href="https://developer.mozilla.org/docs/persona" target="_blank">Developers &rarr;</a></li>
+        <li class="help"><a
+        href="https://support.mozilla.com/kb/what-is-persona-and-how-does-it-work" target="_blank">Need Help? &rarr;</a></li>
+    </ul>
+</footer>
+<script src="https://login.persona.org/include.js"></script>
+<script src="./js/jquery-1.10.2.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
