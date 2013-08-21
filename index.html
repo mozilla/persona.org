@@ -1,50 +1,68 @@
 <!DOCTYPE html>
-<html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+<html LANG="en" dir="ltr">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="email=no" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Mozilla Persona: A Better Way to Sign In</title>
+</head>
+<body class="loading">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Persona.org : Persona.org product page" />
+<div id="wrapper">
+    <header id="header" class="cf">
+        <a class="home" href="/">Persona Home</a>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        <ul class="nav cf">
+            <li><a href="/about">How it works</a></li>
+            <!--
+            <li class="ifAuthenticated"><a href="/">Account</a></li>
 
-    <title>Persona.org</title>
-  </head>
+            <li class="ifNotAuthenticated"><a class="signIn" href="/signin">Sign In</a></li>
+            <li class="ifAuthenticated"><a class="signOut" href="/">Sign Out</a></li>
+            -->
 
-  <body>
+        </ul>
+    </header>
+    <!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+    <div id="hAlign" class="display_nonauth">
+      <div id="vAlign">
+          <div id="signUp">
+              <div id="card"><img src="/i/slit.png"></div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/mozilla/persona.org">View on GitHub</a>
-
-          <h1 id="project_title">Persona.org</h1>
-          <h2 id="project_tagline">Persona.org product page</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/mozilla/persona.org/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/mozilla/persona.org/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+              <h1 class="white headline-main">Connect with Mozilla Persona, the safest &amp; easiest way to sign in.</h1>
+              <p class="tour white">
+                <a href="/about" class="button create">Take the tour</a>
+              </p>
+          </div>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="placeholder-while-testing-cnames" class="anchor" href="#placeholder-while-testing-cnames"><span class="octicon octicon-link"></span></a>Placeholder while testing CNAMES</h3>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Persona.org maintained by <a href="https://github.com/mozilla">mozilla</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
 
-    
+</div>
 
-  </body>
+<footer>
+    <ul class="cf">
+        <li>By the <a href="http://identity.mozilla.com" target="_blank">Identity Team</a> @ <a %s>Mozilla</a></li>
+        <li><a href="/privacy">Privacy &rarr;</a></li>
+        <li><a href="/tos">TOS &rarr;</a></li>
+        <li><a href="https://developer.mozilla.org/docs/persona" target="_blank">Developers &rarr;</a></li>
+        <li class="help"><a
+        href="https://support.mozilla.com/kb/what-is-persona-and-how-does-it-work" target="_blank">Need Help? &rarr;</a></li>
+    </ul>
+</footer>
+<script src="https://login.persona.org/include.js"></script>
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/layout.js"></script>
+<script src="/js/index.js"></script>
+</body>
 </html>
