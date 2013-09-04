@@ -79,6 +79,14 @@ module.exports = function(env, callback) {
 
   util.inherits(EJSPage, env.plugins.Page);
 
+  EJSPage.prototype.name = function name() {
+    if (this.filename === 'index.html') {
+      return 'index';
+    } else {
+      return this.filename.replace(/[\/\\].*/g, '');
+    }
+  };
+
   EJSPage.prototype.getView = function getView() {
     return function viewFn(env, locals, contents, templates, callback) {
       locals.gettext = function(x) { return x; };
