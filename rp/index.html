@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+<html LANG="en" dir="ltr">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+  <meta name="format-detection" content="email=no" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <title>Mozilla Persona: Simple Sign-in for the Web</title>
+</head>
+<body class="loading rp">
+
+<div id="wrapper">
+    <header id="header" class="cf">
+        <a class="home" href="/">Persona Home</a>
+
+        <ul class="nav cf">
+            <li><a href="/about/">About Persona</a></li>
+            <li><a href="/rp/">For Developers</a></li>
+            <li><a href="/idp/">For Email Providers</a></li>
+            <!--
+            <li class="ifAuthenticated"><a href="/">Account</a></li>
+
+            <li class="ifNotAuthenticated"><a class="signIn" href="/signin">Sign In</a></li>
+            <li class="ifAuthenticated"><a class="signOut" href="/">Sign Out</a></li>
+            -->
+
+        </ul>
+    </header>
+    
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<div id="content" class="display_always">
+    <div class="about">
+        <section class="simple-signon">
+
+<!-- 
+            <div class="center"><img src="/static/i/atlas.png" alt="Atlas buckled.">
+ -->
+			<h1 class="title">Stop worrying about ●●●●ing passwords.</h1>
+			<h2>Mozilla Persona lets users sign into your site simply by verifying their email address, relieving you of the headaches that come with storing passwords.</h2>
+			<div class="center"><form><button style="float:none;margin:2em 0;">Unmask Password</button></form></div>
+
+        </section>
+
+        <section class="primary">
+            <article class="blurb third first">
+				<h4>They hate them. You should too.</h4>
+				<p>Compromised passwords burn everybody. Unfortunately, people are using the same passwords on your site as they are on other sites; this means their data is only as safe with you as it is on the least secure site they use. To further aggravate the situation, safe password storage is an ever-evolving practice that draws resources away from your primary focus: maintaining and developing your own application.</p>
+            </article>
+            <article class="blurb third">
+				<h4>Today a service, tomorrow a standard.</h4>
+				<p>Currently Mozilla supports Persona by providing the supporting infrastructure, but soon it will be available natively in products like Firefox and other browser add-ons. We are working towards making it a standard that can operate independently of Mozilla services, leveraging existing standards like HTTP, JSON and JWT. Until that time, Persona is just a Javascript call away.</p>
+            </article>
+            <article class="blurb third">
+                <h4>Password-free for 700 million</h4>
+                <p>Persona allows users to sign into sites with any email address, but is especially convenient for Gmail & Yahoo addresses where no new password need be created.</p>
+            </article>
+        </section>
+
+        <section class="secondary">
+	       	<h3 style="clear:both;padding:2em 0 0;">What else?</h3>
+            <article class="blurb third first">
+                <h4>Breezy to implement</h4>
+                <p>Include our Javascript shim on your website, make two JS calls and one CURL on the server to verify, and you’re in business. Detailed instructions are, of course, maintained on the Mozilla Developer Network.</p>
+            </article>
+            <article class="blurb third">
+                <h4>Improved privacy</h4>
+                <p>Persona is developed by Mozilla, a not-for-profit company trusted throughout the Web community. Our goal is to create technologies that balance an open Web platform with people's privacy.</p>
+            </article>
+            <article class="blurb third">
+                <h4>Mozilla to the rescue</h4>
+                <p>Mozilla’s mission is to promote openness, innovation & opportunity on the Web. And just like our flagship product Firefox, Persona champions you – your security, privacy, and the quality of your online life.</p>
+            </article>
+        </section>
+
+
+        <section class="comparison">
+        	<h3>How does Persona compare?</h3>
+			<table>
+				<tr>
+					<th></th>
+					<th>Persona</th>
+					<th>OpenID</th>
+					<th>Facebook</th>
+					<th>Twitter</th>
+					<th>Google+</th>
+				</tr>
+				<tr>
+					<th>Brandable</th>
+					<td>✓</td>
+					<td>✓</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>Trackable</th>
+					<td></td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+					<td>✓</td>
+				</tr>
+				<tr>
+					<th>Exchanges Personal Info</th>
+					<td></td>
+					<td>✓</td>
+					<td></td>
+					<td>✓</td>
+					<td>✓</td>
+				</tr>
+				<tr>
+					<th>Browser Standard Goal</th>
+					<td>✓</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				<tr>
+					<th>Quick to Implement</th>
+					<td>✓</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				</tr>
+			</table>
+        </section>
+
+        <section>
+            <article class="blurb half first">
+				<h4>Prominent Sites</h4>
+				<p>Lorem ipsum</p>
+            </article>
+            <article class="blurb half">
+				<h4>Framework Support</h4>
+				<p>Lorem ipsum</p>
+            </article>
+            <article class="blurb half first">
+				<h4>Style Guidelines</h4>
+				<p>Lorem ipsum</p>
+            </article>
+            <article class="blurb half">
+				<h4>Migration Planning</h4>
+				<p>Lorem ipsum</p>
+            </article>
+            <article class="blurb half first">
+				<h4>Calls to Action</h4>
+				<p>MDN, See examples</p>
+            </article>
+            <article class="blurb half">
+				<h4>Reviewed by</h4>
+				<p>Credentials, quotes, face pile</p>
+            </article>
+        </section>
+
+        <section>
+        	<a href="https://developer.mozilla.org/docs/persona" class="developers" target="_blank"><img src="/static/i/developers-link.png" alt="Persona for developers"><span>Implement Persona on your site </span>Developer guides and API documentation</a>
+        </section>
+
+
+
+
+    </div><!-- #dashboard -->
+</div>
+
+
+
+
+</div>
+
+<footer>
+    <ul class="cf">
+        <li>By the <a href="http://identity.mozilla.com" target="_blank">Identity Team</a> @ <a %s>Mozilla</a></li>
+        <li><a href="/privacy">Privacy &rarr;</a></li>
+        <li><a href="/tos">TOS &rarr;</a></li>
+        <li><a href="https://developer.mozilla.org/docs/persona" target="_blank">Developers &rarr;</a></li>
+        <li class="help"><a
+        href="https://support.mozilla.com/kb/what-is-persona-and-how-does-it-work" target="_blank">Need Help? &rarr;</a></li>
+    </ul>
+</footer>
+<!--<script src="https://login.persona.org/include.js"></script>-->
+<script src="/static/js/jquery-1.10.2.min.js"></script>
+<script src="/static/js/layout.js"></script>
+<script src="/static/js/index.js"></script>
+</body>
+</html>

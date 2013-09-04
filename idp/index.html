@@ -9,17 +9,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
   <meta name="format-detection" content="email=no" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <title>Mozilla Persona: A Better Way to Sign In</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <title>Mozilla Persona: Simple Sign-in for the Web</title>
 </head>
-<body class="loading">
+<body class="loading idp">
 
 <div id="wrapper">
     <header id="header" class="cf">
         <a class="home" href="/">Persona Home</a>
 
         <ul class="nav cf">
-            <li><a href="/about">How it works</a></li>
+            <li><a href="/about/">About Persona</a></li>
+            <li><a href="/rp/">For Developers</a></li>
+            <li><a href="/idp/">For Email Providers</a></li>
             <!--
             <li class="ifAuthenticated"><a href="/">Account</a></li>
 
@@ -45,13 +47,13 @@
                 </div>
 
                 <div class="graphic">
-                    <img src="/i/one-password-graphic.png" alt="One password to rule them all.">
+                    <img src="/static/i/one-password-graphic.png" alt="One password to rule them all.">
                 </div>
             </article>
 
             <article class="blurb flexible">
                 <div class="graphic first">
-                    <img src="/i/flexible-graphic.png" alt="Use multiple email addresses">
+                    <img src="/static/i/flexible-graphic.png" alt="Use multiple email addresses">
                 </div>
 
                 <div class="info">
@@ -74,7 +76,7 @@
             </article>
         </section>
 
-        <a href="https://developer.mozilla.org/docs/persona" class="developers" target="_blank"><img src="/i/developers-link.png" alt="Persona for developers"><span>Implement Persona on your site </span>Developer guides and API documentation</a>
+        <a href="https://developer.mozilla.org/docs/persona" class="developers" target="_blank"><img src="/static/i/developers-link.png" alt="Persona for developers"><span>Implement Persona on your site </span>Developer guides and API documentation</a>
     </div><!-- #dashboard -->
 </div>
 
@@ -93,9 +95,9 @@
         href="https://support.mozilla.com/kb/what-is-persona-and-how-does-it-work" target="_blank">Need Help? &rarr;</a></li>
     </ul>
 </footer>
-<script src="https://login.persona.org/include.js"></script>
-<script src="/js/jquery-1.10.2.min.js"></script>
-<script src="/js/layout.js"></script>
-<script src="/js/index.js"></script>
+<!--<script src="https://login.persona.org/include.js"></script>-->
+<script src="/static/js/jquery-1.10.2.min.js"></script>
+<script src="/static/js/layout.js"></script>
+<script src="/static/js/index.js"></script>
 </body>
 </html>
