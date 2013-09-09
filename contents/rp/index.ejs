@@ -10,36 +10,46 @@
 <!-- 
             <div class="center"><img src="<%- cachify('/static/i/atlas.png') %>" alt="<%- gettext('Atlas buckled.') %>">
  -->
-			<h1 class="title"><%- gettext('Stop worrying about ●●●●ing passwords.') %></h1>
-			<h2><%- gettext('Mozilla Persona lets users sign into your site simply by verifying their email address, relieving you of the headaches that come with storing passwords.') %></h2>
+			<h1 class="title center">Stop worrying about <span>s</span><span>t</span><span>o</span><span>r</span>ing passwords.</h1>
+			<h2 class="center"><%- gettext('Mozilla Persona lets users sign into your site by verifying an email address in as few as two clicks, relieving you of the headaches that accompany password storage.') %></h2>
+<!-- 
 			<div class="center"><form><button style="float:none;margin:2em 0;">Unmask Password</button></form></div>
+ -->
 
         </section>
-
+        
         <section class="primary">
             <article class="blurb third first">
-				<h4><%- gettext('They hate them. You should too.') %></h4>
-				<p><%- gettext('Compromised passwords burn everybody. Unfortunately, people are using the same passwords on your site as they are on other sites; this means their data is only as safe with you as it is on the least secure site they use. To further aggravate the situation, safe password storage is an ever-evolving practice that draws resources away from your primary focus: maintaining and developing your own application.') %></p>
+				<h4><%- gettext('Forget passwords') %></h4>
+				<p><%- gettext('Securing your users’ passwords takes resources away from your primary focus: maintaining and developing your application. But no matter how well you do it, you can still get hurt when people use the same passwords on other, less secure, sites. Although this is a risk you can’t control, your reputation still suffers when password compromise happens.') %></p>
             </article>
             <article class="blurb third">
-				<h4><%- gettext('Today a service, tomorrow a standard.') %></h4>
-				<p><%- gettext('Currently Mozilla supports Persona by providing the supporting infrastructure, but soon it will be available natively in products like Firefox and other browser add-ons. We are working towards making it a standard that can operate independently of Mozilla services, leveraging existing standards like HTTP, JSON and JWT. Until that time, Persona is just a Javascript call away.') %></p>
+                <h4><%- gettext('Breezy to implement') %></h4>
+                <p><%- gettext('Adding Persona to your site can take as little as 15 minutes. Include our Javascript shim on your website, make two JS calls and one CURL on the server to verify, and you’re in business. Detailed instructions are, of course, maintained on the Mozilla Developer Network.') %></p>
             </article>
             <article class="blurb third">
-                <h4><%- gettext('Password-free for 700 million') %></h4>
-                <p><%- gettext('Persona allows users to sign into sites with any email address, but is especially convenient for Gmail & Yahoo addresses where no new password need be created.') %></p>
+                <h4><%- gettext('Low commitment') %></h4>
+                <p><%- gettext('Persona’s not a silo from which there is no escape. Users always provide a verified email address which makes it easy to transition to or away from Persona.') %></p>
             </article>
         </section>
 
+
+        <section class="light">
+				<p><a href="http://bornthiswayfoundation.org">Born This Way Foundation</a> us dedicated to creating a safe community that helps connect young people with the skills and opportunities they need to build a kinder, braver world.</p>
+        </section>
+
+
+ 
         <section class="secondary">
-	       	<h3 style="clear:both;padding:2em 0 0;">What else?</h3>
             <article class="blurb third first">
-                <h4><%- gettext('Breezy to implement') %></h4>
-                <p><%- gettext('Include our Javascript shim on your website, make two JS calls and one CURL on the server to verify, and you’re in business. Detailed instructions are, of course, maintained on the Mozilla Developer Network.') %></p>
+                <h4><%- gettext('It works everywhere.') %></h4>
+	            <p class="center"><img src="<%- cachify('/static/i/browser-icons.png') %>" alt="<%- gettext('Browser icons') %>"></p>
+                <p><%- gettext('The Web is bigger than any one browser, social network, or email provider.') %></p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Persona/Browser_compatibility">Supported browsers / devices</a></p>
             </article>
             <article class="blurb third">
-                <h4><%- gettext('Improved privacy') %></h4>
-                <p><%- gettext('Persona is developed by Mozilla, a not-for-profit company trusted throughout the Web community. Our goal is to create technologies that balance an open Web platform with people\'s privacy.') %></p>
+                <h4><%- gettext('Today a service, tomorrow a standard') %></h4>
+				<p><%- gettext('Currently Mozilla supports Persona by providing the supporting infrastructure, but soon it will be available natively in products like Firefox and other browser add-ons. We are working towards making it a standard that can operate independently of Mozilla services, leveraging existing standards like HTTP, JSON and JWT. Until that time, Persona is just a Javascript call away.') %></p>
             </article>
             <article class="blurb third">
                 <h4><%- gettext('Mozilla to the rescue') %></h4>
@@ -47,6 +57,9 @@
             </article>
         </section>
 
+        <section class="light">
+				<p><a href="http://clay.io/">Clay.io</a> provides a centralized location for all your favorite web and mobile games.</p>
+        </section>
 
         <section class="comparison">
         	<h3>How does Persona compare?</h3>
@@ -76,7 +89,7 @@
 					<td>✓</td>
 				</tr>
 				<tr>
-					<th>Exchanges Personal Info</th>
+					<th>Exchanges personal info</th>
 					<td></td>
 					<td>✓</td>
 					<td></td>
@@ -84,14 +97,14 @@
 					<td>✓</td>
 				</tr>
 				<tr>
-					<th>Browser Standard Goal</th>
+					<th>Browser standard goal</th>
 					<td>✓</td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
 				<tr>
-					<th>Quick to Implement</th>
+					<th>Quick to implement</th>
 					<td>✓</td>
 					<td></td>
 					<td></td>
@@ -102,39 +115,35 @@
 			</table>
         </section>
 
+       <section class="secondary">
+            <article class="blurb half first">
+                <h4><%- gettext('Improved privacy') %></h4>
+                <p><%- gettext('Persona is developed by Mozilla, a not-for-profit company trusted throughout the Web community. Our goal is to create technologies that balance an open Web platform with people\'s privacy.') %></p>
+            </article>
+            <article class="blurb half">
+                <h4><%- gettext('Password-free for 700 million') %></h4>
+                <p><%- gettext('Persona allows users to sign into sites with any email address, but is especially convenient for Gmail & Yahoo addresses where no new password need be created.') %></p>
+            </article>
+        </section>
+
+
         <section>
             <article class="blurb half first">
 				<h4><%- gettext('Prominent Sites') %></h4>
-				<p><%- gettext('Lorem ipsum') %></p>
+				<p><a href="http://bornthiswayfoundation.org">Born This Way Foundation</a> us dedicated to creating a safe community that helps connect young people with the skills and opportunities they need to build a kinder, braver world.</p>
+				<p><a href="http://clay.io/">Clay.io</a> provides a centralized location for all your favorite web and mobile games.</p>
             </article>
             <article class="blurb half">
-				<h4><%- gettext('Framework Support') %></h4>
-				<p><%- gettext('Lorem ipsum') %></p>
-            </article>
-            <article class="blurb half first">
-				<h4><%- gettext('Style Guidelines') %></h4>
-				<p><%- gettext('Lorem ipsum') %></p>
-            </article>
-            <article class="blurb half">
-				<h4><%- gettext('Migration Planning') %></h4>
-				<p><%- gettext('Lorem ipsum') %></p>
-            </article>
-            <article class="blurb half first">
-				<h4><%- gettext('Calls to Action') %></h4>
-				<p><%- gettext('MDN, See examples') %></p>
-            </article>
-            <article class="blurb half">
-				<h4><%- gettext('Reviewed by') %></h4>
-				<p><%- gettext('Credentials, quotes, face pile') %></p>
+				<h4><%- gettext('Libraries &amp; Plugins') %></h4>
+				<p><b>Plugins:</b> Clojure, Cold Fusion, Haskell, Java, JavaScript, Node.js, PHP, Python, Ruby, Erlang</p>
+				<p><b>Utility Libraries:</b> C, Go, Haskell, .Net, Node.js, Perl, PHP, Python, Ruby</p>
+				<p><b>Everything Else:</b> Perl, Python, Ruby, PHP, Racket</p>				
             </article>
         </section>
 
         <section>
         	<a href="https://developer.mozilla.org/docs/persona" class="developers" target="_blank"><img src="<%- cachify('/static/i/developers-link.png') %>" alt="<%- gettext('Persona for developers') %>"><span><%- gettext('Implement Persona on your site') %> </span><%- gettext('Developer guides and API documentation') %></a>
         </section>
-
-
-
 
     </div><!-- #dashboard -->
 </div>
