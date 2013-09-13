@@ -1,16 +1,48 @@
+
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/.
--->
-    <div id="hAlign" class="display_nonauth">
-      <div id="vAlign">
-          <div id="signUp">
-              <div id="card"><img src="/static/i/slit.png"></div>
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-              <h1 class="white headline-main">Connect with Mozilla Persona, the safest &amp; easiest way to sign in.</h1>
-              <p class="tour white">
-                <a href="/about/" class="button create">Take the tour</a>
-              </p>
-          </div>
-      </div>
-    </div>
+<div id="content" class="display_always">
+    <div class="about">
+        <section class="simple-signon">
+			<h1 class="title center">Everybody hates <span>n</span><span>e</span><span>e</span><span>d</span>ing passwords.</h1>
+			<h2 class="center"><%- gettext('Passwords are drowning the Internet. Persona lets you sign in to websites with any email address in as few as two clicks, without the need to create a new password.') %></h2>
+        </section>
+
+        <section class="secondary">
+            <article class="blurb third first">
+                <h4><%- gettext('Passwords – prepare to die.') %></h4>
+                <p><%- gettext('Persona already provides a password-free sign-in to supporting websites for 700 million Google and Yahoo account holders.') %></p>
+            </article>
+            <article class="blurb third">
+                <h4><%- gettext('Choose your own identity') %></h4>
+				<p><%- gettext('Persona works with any email address, which makes it easy to keep your work and personal lives separate.') %></p>
+            </article>
+            <article class="blurb third">
+                <h4><%- gettext('Control what you share') %></h4>
+                <p><%- gettext('Unlike social login, Persona only shares an email address that you choose. Everything else is up to you.') %></p>
+            </article>
+        </section>
+
+
+        <section class="secondary">
+            <article class="blurb third first">
+                <h4><%- gettext('Works everywhere.') %></h4>
+	            <p class="center"><img src="<%- cachify('/static/i/browser-icons.png') %>" alt="<%- gettext('Browser icons') %>"></p>
+                <p><%- gettext('The Web is bigger than any one browser, social network, or email provider.') %> That's why Persona works on all of these <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Persona/Browser_compatibility">supported browsers and devices</a>.</p>
+            </article>
+            <article class="blurb third">
+                <h4><%- gettext('Today a service, tomorrow a standard') %></h4>
+				<p><%- gettext('Currently we support Persona with our own infrastructure, but soon we’ll build it into our products like Firefox and make it available in other browser add-ons. We aim to make it a standard that can operate independently of Mozilla’s reputation, leveraging existing standards like HTTP, JSON and JWT. Until that time, Persona is just a Javascript call away.') %></p>
+            </article>
+            <article class="blurb third">
+                <h4><%- gettext('Mozilla to the rescue') %></h4>
+                <p><%- gettext('Mozilla’s mission is to promote openness, innovation & opportunity on the Web. And just like our flagship product Firefox, Persona champions you – your security, privacy, and the quality of your online life.') %></p>
+            </article>
+        </section>
+
+
+    </div><!-- #dashboard -->
+</div>
+

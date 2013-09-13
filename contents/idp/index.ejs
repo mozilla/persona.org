@@ -6,53 +6,42 @@
 <div id="content" class="display_always">
     <div class="about">
         <section class="simple-signon">
-        <h2 class="title"><%- gettext('Simplified sign-on.') %></h2>
-            <article class="blurb">
-                <div class="info first">
-                    <h1><%- gettext('Persona replaces multiple passwords') %></h1>
-                    <p><%- format(gettext('Sites such as <a %(timesLink)s>%(timesName)s</a>, <a %(openphotoLink)s>%(openphotoName)s</a> and <a %(voostLink)s>%(voostName)s</a> use Persona instead of usernames to sign you in.'),
-                                  {
-                                    timesLink: 'href="http://crossword.thetimes.co.uk/" target="_blank"',
-                                    timesName: 'The Times Crossword',
-                                    openphotoLink: 'href="https://current.trovebox.com/" target="_blank"',
-                                    openphotoName: 'Trovebox',
-                                    voostLink: 'href="https://www.voo.st/" target="_blank"',
-                                    voostName: 'Voost'
-                                  })
-                           %></p><p><%- gettext('This means you only need one password to sign in to many sites.') %></p>
-                </div>
+	        <h1 class="title center"><%- gettext('Join a major password reset.') %></h1>
+			<h2 class="center"><%- gettext('Mozilla Persona turns email addresses into master keys that allow users to sign into supporting websites in as few as two clicks.') %></h2>
+        </section>
 
-                <div class="graphic">
-                    <img src="<%- cachify('/static/i/one-password-graphic.png') %>" alt="<%- gettext('One password to rule them all.') %>">
-                </div>
+        <section class="secondary">
+            <article class="blurb third first">
+                <h4><%- gettext('Easy to implement.') %></h4>
+                <p><%- gettext('You can be up and running in a day, and adding Persona to user-facing websites can take as little as 15 minutes each. This ain’t SAML.') %></p>
             </article>
-
-            <article class="blurb flexible">
-                <div class="graphic first">
-                    <img src="<%- cachify('/static/i/flexible-graphic.png') %>" alt="<%- gettext('Use multiple email addresses') %>">
-                </div>
-
-                <div class="info">
-                    <h1><%- gettext('Persona is flexible') %></h1>
-                    <p><%- gettext('Within Persona, your identity is your email address. You can use as many email addresses as you want, but you still only need one password.') %></p>
-                </div>
+            <article class="blurb third">
+                <h4><%- gettext('Improved security, everywhere') %></h4>
+				<p><%- gettext('As an Identity Provider, you control how your users authenticate, no matter where they go on the Web. Add two factor authentication once, and your users are instantly more secure on every Persona-enabled website.') %></p>
+            </article>
+            <article class="blurb third">
+                <h4><%- gettext('Guard against reused passwords') %></h4>
+                <p><%- gettext('With Persona, websites never see nor store users’ authentication credentials, which protects you and your users from collateral damage when a third party is compromised.') %></p>
             </article>
         </section>
 
-        <section class="privacy">
-            <h2 class="title"><%- gettext('Real privacy.') %></h2>
-
-            <article class="blurb half first" style="min-height: 195px; ">
-                <h1><%- gettext('Persona is proudly non-profit for you') %></h1>
-                <p><%- gettext('Persona is developed by Mozilla, a not-for-profit company trusted throughout the Web community. Our goal is to create technologies that balance an open Web platform with people\'s privacy.') %></p>
+        <section class="secondary">
+            <article class="blurb third first">
+                <h4><%- gettext('It works everywhere.') %></h4>
+	            <p class="center"><img src="<%- cachify('/static/i/browser-icons.png') %>" alt="<%- gettext('Browser icons') %>"></p>
+                <p><%- gettext('The Web is bigger than any one browser, social network, or email provider.') %></p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Persona/Browser_compatibility">Supported browsers / devices</a></p>
             </article>
-            <article class="blurb half">
-                <h1><%- gettext('Persona preserves your privacy') %></h1>
-                <p><%- gettext('Persona does not track your activity around the Web. It creates a wall between signing you in and what you do once you\'re there. The history of what sites you visit is stored only on your own computer.') %></p>
+            <article class="blurb third">
+                <h4><%- gettext('Today a service, tomorrow a standard') %></h4>
+				<p><%- gettext('Currently Mozilla supports Persona by providing the supporting infrastructure, but soon it will be available natively in products like Firefox and other browser add-ons. We are working towards making it a standard that can operate independently of Mozilla services, leveraging existing standards like HTTP, JSON and JWT. Until that time, Persona is just a Javascript call away.') %></p>
+            </article>
+            <article class="blurb third">
+                <h4><%- gettext('Mozilla to the rescue') %></h4>
+                <p><%- gettext('Mozilla’s mission is to promote openness, innovation & opportunity on the Web. And just like our flagship product Firefox, Persona champions you – your security, privacy, and the quality of your online life.') %></p>
             </article>
         </section>
 
-        <a href="https://developer.mozilla.org/docs/persona" class="developers" target="_blank"><img src="<%- cachify('/static/i/developers-link.png') %>" alt="<%- gettext('Persona for developers') %>"><span><%- gettext('Implement Persona on your site') %> </span><%- gettext('Developer guides and API documentation') %></a>
     </div><!-- #dashboard -->
 </div>
 
