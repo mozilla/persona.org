@@ -35,7 +35,7 @@ s.exec('git checkout ' + deployBranch);
 
 // clean out all files not on whitelist
 var files = s.ls('-A', './').filter(function(name) {
-  return !WHITELIST.indexOf(name);
+  return WHITELIST.indexOf(name) === -1;
 });
 
 s.rm('-Rf', files);
