@@ -1,9 +1,10 @@
+const os = require('os');
 const path = require('path');
 
 const s = require('shelljs');
 
 const BUILD = path.join(__dirname, 'build.js');
-const WHITELIST = ['build', 'CNAME'];
+const WHITELIST = ['CNAME'];
 
 // this builds the static file, and pushes it to a branch on github
 // Usage: node ./scripts/deploy.js <branch-name>
@@ -23,6 +24,10 @@ var version = s.exec('git rev-parse HEAD', { silent: true }).output;
 console.log('Building static site...');
 s.exec('node ' + BUILD);
 
+// copy build directory to tmpdir
+const TMP = path.join(os.tmpDir(), 'build-' + version);
+s.cp('-Rf', './build', TMP);
+
 // checkout <branch-name>
 var currentBranch = s.exec('git rev-parse --abbrev-ref HEAD', { silent: true }).output;
 s.exec('git checkout ' + deployBranch);
@@ -35,7 +40,7 @@ var files = s.ls('-A', './').filter(function(name) {
 s.rm('-Rf', files);
 
 // cp build/* to ./*
-s.cp('-Rf', './build/*','./');
+s.cp('-Rf', path.join(TMP, '*'),'./');
 
 // remove build/*
 s.rm('-Rf', './build');
