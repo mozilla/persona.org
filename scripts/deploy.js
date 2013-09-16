@@ -18,7 +18,7 @@ if (!deployBranch) {
 console.log('Deploying ' + deployBranch + '...');
 
 // get deploy version
-var version = s.exec('git rev-parse HEAD', { silent: true }).output;
+var version = s.exec('git rev-parse HEAD', { silent: true }).output.replace(/\s/g, '');
 
 // run the build script
 console.log('Building static site...');
@@ -26,7 +26,8 @@ s.exec('node ' + BUILD);
 
 // copy build directory to tmpdir
 const TMP = path.join(os.tmpDir(), 'build-' + version);
-s.cp('-Rf', './build', TMP);
+s.mkdir(TMP);
+s.cp('-Rf', './build/*', TMP);
 
 // checkout <branch-name>
 var currentBranch = s.exec('git rev-parse --abbrev-ref HEAD', { silent: true }).output;
