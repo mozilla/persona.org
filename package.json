@@ -16,6 +16,7 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "ejs": "*",
+    "shelljs": "0.2.5",
     "wintersmith": "2.0.5"
   }
 }
