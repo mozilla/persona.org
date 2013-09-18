@@ -4,7 +4,7 @@ const path = require('path');
 const s = require('shelljs');
 
 const BUILD = path.join(__dirname, 'build.js');
-const WHITELIST = ['CNAME'];
+const WHITELIST = ['.git', 'CNAME'];
 
 // this builds the static file, and pushes it to a branch on github
 // Usage: node ./scripts/deploy.js <branch-name>
