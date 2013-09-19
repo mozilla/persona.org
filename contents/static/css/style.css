@@ -2,6 +2,57 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/static/fonts/en/opensans-regular.eot');
+  src: local('Open Sans'),
+       local('OpenSans'),
+       url('/static/fonts/en/opensans-regular.eot#') format('embedded-opentype'),
+       url('/static/fonts/en/opensans-regular.woff') format('woff'),
+       url('/static/fonts/en/opensans-regular.ttf') format('truetype'),
+       url('/static/fonts/en/opensans-regular.svg#Open Sans') format('svg');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/static/fonts/en/opensans-bold.eot');
+  src: local('Open Sans Bold'),
+       local('OpenSans-Bold'),
+       url('/static/fonts/en/opensans-bold.eot#') format('embedded-opentype'),
+       url('/static/fonts/en/opensans-bold.woff') format('woff'),
+       url('/static/fonts/en/opensans-bold.ttf') format('truetype'),
+       url('/static/fonts/en/opensans-bold.svg#Open Sans') format('svg');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/static/fonts/en/opensans-light.eot');
+  src: local('Open Sans Light'),
+       local('OpenSans-Light'),
+       url('/static/fonts/en/opensans-light.eot#') format('embedded-opentype'),
+       url('/static/fonts/en/opensans-light.woff') format('woff'),
+       url('/static/fonts/en/opensans-light.ttf') format('truetype'),
+       url('/static/fonts/en/opensans-light.svg#Open Sans') format('svg');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/static/fonts/en/opensans-italic.eot');
+  src: local('Open Sans Italic'),
+       local('OpenSans-Italic'),
+       url('/static/fonts/en/opensans-italic.eot#') format('embedded-opentype'),
+       url('/static/fonts/en/opensans-italic.woff') format('woff'),
+       url('/static/fonts/en/opensans-italic.ttf') format('truetype'),
+       url('/static/fonts/en/opensans-italic.svg#Open Sans') format('svg');
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +67,9 @@ html, body {
   height: 100%;
 }
 
+
 body {
-  font: 14px/20px 'Open Sans Light', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font: 14px/20px 'Open Sans', "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
   overflow-y: auto;
 }
 
@@ -724,7 +776,7 @@ h1 {
 }
 
 .headline-main, h1 {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 
