@@ -5,28 +5,28 @@
 $(function() {
 
   function resize() {
-    // Get tallest blurb
-    var tallestBlurb = 0;
 
-    $('.half').each(function(index) {
-      var $this = $(this);
+    $('section:has(.blurb)').each(function() {
+      var row = $(this);
+      // Get tallest blurb
+      var tallestBlurb = 0;
+      row.children('.blurb').each(function() {
+      
+        var $this = $(this);
 
-      if (index === 0) {
-        tallestBlurb = $this.height();
-      } else {
-
-        if ($this.height() < tallestBlurb) {
-          $this.css('min-height', tallestBlurb);
-        } else {
-          $('.half.first').css('min-height', $this.height());
+        var height = $this.height();
+        if (height > tallestBlurb) {
+          tallestBlurb = height;
         }
-
-      }
+        console.log(tallestBlurb);
+      }).height(tallestBlurb);
     });
+
   }
 
   resize();
   $(window).on('resize', resize);
 
+  console.log('asdf');
 
 });
