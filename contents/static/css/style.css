@@ -1456,29 +1456,6 @@ article.flexible .info {
 .comparison table td { text-align: center; }
 .comparison table td, .comparison table th { padding: 0.5em; border-bottom: 1px solid #ccc; }
 
-h1 span
-{
-	border-radius: 100%;
-	width: 36px;
-	height: 36px;
-	line-height: 28px;
-	display: inline-block;
-	background-color: rgba(255,255,255,1);
-	color: rgba(255,255,255,0);
-	margin-left: 2px;
-	transition: background-color 0.5s ease;
-	overflow: hidden;
-	vertical-align: bottom;
-  }
-
-h1:hover span
-{
-	color: rgba(255,255,255,1);
-	background-color: rgba(255,255,255,0.75);
-	overflow: visible;
-	vertical-align: bottom;
-}
-
 section.light {
     background-color: #EAEFF2;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#EAEFF2), to(#D4DDE4));
