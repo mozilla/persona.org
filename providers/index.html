@@ -5,14 +5,14 @@
 -->
 <html LANG="en" dir="ltr">
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
   <meta name="format-detection" content="email=no" />
   <link rel="stylesheet" href="/static/css/style.css" />
   <title>Mozilla Persona: Simple Sign-in for the Web</title>
 </head>
-<body class="loading idp">
+<body class="loading providers">
 
 <div id="wrapper">
     <header id="header" class="cf">
@@ -20,27 +20,18 @@
 
         <ul class="nav cf">
             <li><a href="/">About Persona</a></li>
-            <li><a href="/rp/">For Developers</a></li>
-            <li><a href="/idp/">For Email Providers</a></li>
-            <!--
-            <li class="ifAuthenticated"><a href="/">Account</a></li>
-
-            <li class="ifNotAuthenticated"><a class="signIn" href="/signin">Sign In</a></li>
-            <li class="ifAuthenticated"><a class="signOut" href="/">Sign Out</a></li>
-            -->
-
+            <li><a href="/developers/">For Developers</a></li>
+            <li><a href="/providers/">For Email Providers</a></li>
         </ul>
     </header>
+
     
-<!-- This Source Code Form is subject to the terms of the Mozilla Public
-   - License, v. 2.0. If a copy of the MPL was not distributed with this
-   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <div id="content" class="display_always">
     <div class="about">
         <section class="simple-signon">
-	        <h1 class="title center">Join a major password reset.</h1>
-			<h2 class="center">Mozilla Persona turns email addresses into master keys that allow users to sign into supporting websites in as few as two clicks.</h2>
+            <h1 class="title center">Join a major password reset.</h1>
+            <h2 class="center">Mozilla Persona turns email addresses into master keys that allow users to sign into supporting websites in as few as two clicks.</h2>
         </section>
 
         <section class="secondary">
@@ -50,7 +41,7 @@
             </article>
             <article class="blurb third">
                 <h4>Improved security, everywhere</h4>
-				<p>As an Identity Provider, you control how your users authenticate, no matter where they go on the Web. Add two factor authentication once, and your users are instantly more secure on every Persona-enabled website.</p>
+                <p>As an Identity Provider, you control how your users authenticate, no matter where they go on the Web. Add two factor authentication once, and your users are instantly more secure on every Persona-enabled website.</p>
             </article>
             <article class="blurb third">
                 <h4>Guard against reused passwords</h4>
@@ -61,23 +52,21 @@
         <section class="secondary">
             <article class="blurb third first">
                 <h4>It works everywhere.</h4>
-	            <p class="center"><img src="/static/i/browser-icons.png" alt="Browser icons"></p>
+                <p class="center"><img src="/static/i/browser-icons.png" alt="Browser icons"></p>
                 <p>The Web is bigger than any one browser, social network, or email provider.</p>
                 <p><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Persona/Browser_compatibility">Supported browsers / devices</a></p>
             </article>
             <article class="blurb third">
                 <h4>Today a service, tomorrow a standard</h4>
-				<p>Currently Mozilla supports Persona by providing the supporting infrastructure, but soon it will be available natively in products like Firefox and other browser add-ons. We are working towards making it a standard that can operate independently of Mozilla services, leveraging existing standards like HTTP, JSON and JWT. Until that time, Persona is just a Javascript call away.</p>
+                <p>Currently Mozilla supports Persona by providing the supporting infrastructure, but soon it will be available natively in products like Firefox and other browser add-ons. We are working towards making it a standard that can operate independently of Mozilla services, leveraging existing standards like HTTP, JSON and JWT. Until that time, Persona is just a Javascript call away.</p>
             </article>
             <article class="blurb third">
                 <h4>Mozilla to the rescue</h4>
-                <p>Mozilla’s mission is to promote openness, innovation & opportunity on the Web. And just like our flagship product Firefox, Persona champions you – your security, privacy, and the quality of your online life.</p>
+                <p>Mozilla’s mission is to promote openness, innovation &amp; opportunity on the Web. And just like our flagship product Firefox, Persona champions you – your security, privacy, and the quality of your online life.</p>
             </article>
         </section>
-
-    </div><!-- #dashboard -->
+    </div>
 </div>
-
 
 
 
@@ -85,7 +74,7 @@
 
 <footer>
     <ul class="cf">
-        <li>By the <a href="http://identity.mozilla.com" target="_blank">Identity Team</a> @ <a %s>Mozilla</a></li>
+        <li>By the <a href="http://identity.mozilla.com" target="_blank">Identity Team</a> @ <a href="http://mozilla.com" target="_blank">Mozilla</a></li>
         <li><a href="/privacy">Privacy &rarr;</a></li>
         <li><a href="/tos">TOS &rarr;</a></li>
         <li><a href="https://developer.mozilla.org/docs/persona" target="_blank">Developers &rarr;</a></li>
@@ -93,9 +82,10 @@
         href="https://support.mozilla.com/kb/what-is-persona-and-how-does-it-work" target="_blank">Need Help? &rarr;</a></li>
     </ul>
 </footer>
-<!--<script src="https://login.persona.org/include.js"></script>-->
+
 <script src="/static/js/jquery-1.10.2.min.js"></script>
 <script src="/static/js/layout.js"></script>
 <script src="/static/js/about.js"></script>
+
 </body>
 </html>

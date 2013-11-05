@@ -1220,6 +1220,17 @@ header .nav a:hover {
   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
 }
 
+body.index header .nav a[href="/"],
+body.rp header .nav a[href="/rp/"],
+body.idp header .nav a[href="/idp/"] {
+  border:1px solid #333;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 1px rgb(119, 119, 119);
+  -moz-box-shadow: 0 0 1px rgb(119, 119, 119);
+  -ms-box-shadow: 0 0 1px rgb(119, 119, 119);
+  box-shadow: 0 0 1px rgb(119, 119, 119);
+}
+
 header ul {
   float: right;
   line-height: 37px;
@@ -1330,6 +1341,7 @@ a.developers {
 }
 
 .blurb {
+  margin-top: 30px;
   margin-bottom: 30px;
   padding: 30px;
   text-align: left;
@@ -1454,29 +1466,6 @@ article.flexible .info {
 .comparison table tr > th:first-child { text-align: left; text-transform: none; width: 25%; }
 .comparison table td { text-align: center; }
 .comparison table td, .comparison table th { padding: 0.5em; border-bottom: 1px solid #ccc; }
-
-h1 span
-{
-	border-radius: 100%;
-	width: 36px;
-	height: 36px;
-	line-height: 28px;
-	display: inline-block;
-	background-color: rgba(255,255,255,1);
-	color: rgba(255,255,255,0);
-	margin-left: 2px;
-	transition: background-color 0.5s ease;
-	overflow: hidden;
-	vertical-align: bottom;
-  }
-
-h1:hover span
-{
-	color: rgba(255,255,255,1);
-	background-color: rgba(255,255,255,0.75);
-	overflow: visible;
-	vertical-align: bottom;
-}
 
 section.light {
     background-color: #EAEFF2;
