@@ -1222,6 +1222,7 @@ header .nav a:hover {
 
 .nav a.active {
   border:1px solid #333;
+  background-color: #333;
   border-radius: 7px;
   -webkit-box-shadow: 0 0 1px rgb(119, 119, 119);
   -moz-box-shadow: 0 0 1px rgb(119, 119, 119);
