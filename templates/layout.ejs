@@ -19,9 +19,9 @@
         <a class="home" href="/">Persona Home</a>
 
         <ul class="nav cf">
-            <li><a href="/">About Persona</a></li>
-            <li><a href="/developers/">For Developers</a></li>
-            <li><a href="/providers/">For Email Providers</a></li>
+            <li><a href="/" class="<%= (page.url == "/") ? "active" : "" %>">About Persona</a></li>
+            <li><a href="/developers/" class="<%= (page.url == "/developers/") ? "active" : "" %>">For Developers</a></li>
+            <li><a href="/providers/" class="<%= (page.url == "/providers/") ? "active" : "" %>">For Email Providers</a></li>
         </ul>
     </header>
 

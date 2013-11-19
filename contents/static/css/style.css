@@ -1220,9 +1220,7 @@ header .nav a:hover {
   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
 }
 
-body.index header .nav a[href="/"],
-body.rp header .nav a[href="/rp/"],
-body.idp header .nav a[href="/idp/"] {
+.nav a.active {
   border:1px solid #333;
   border-radius: 7px;
   -webkit-box-shadow: 0 0 1px rgb(119, 119, 119);
