@@ -1212,18 +1212,18 @@ header .nav a {
   text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
 }
 
-header .nav a:hover {
+header .nav a.active {
   color: #383838;
   background-color: #f4f3f0;
-  border-radius: 3px;
+  border-radius: 7px;
   text-shadow: 0 1px 0 #fff;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
 }
 
-body.index header .nav a[href="/"],
-body.rp header .nav a[href="/rp/"],
-body.idp header .nav a[href="/idp/"] {
-  border:1px solid #333;
+header .nav a:hover {
+  color: inherit;
+  text-shadow: inherit;
+  background-color: #333;
   border-radius: 7px;
   -webkit-box-shadow: 0 0 1px rgb(119, 119, 119);
   -moz-box-shadow: 0 0 1px rgb(119, 119, 119);
