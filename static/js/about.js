@@ -18,7 +18,6 @@ $(function() {
         if (height > tallestBlurb) {
           tallestBlurb = height;
         }
-        console.log(tallestBlurb);
       }).height(tallestBlurb);
     });
 
@@ -26,7 +25,5 @@ $(function() {
 
   resize();
   $(window).on('resize', resize);
-
-  console.log('asdf');
 
 });
