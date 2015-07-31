@@ -3,8 +3,8 @@ persona.org
 
 Persona.org product page.
 
-Not to be confused with the Persona service, repo at
-https://github.com/mozilla/browserid
+Not to be confused with the Persona service, which can be found at
+https://github.com/mozilla/persona.
 
 ### Static Site built by [Wintersmith][]
 
