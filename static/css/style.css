@@ -1479,3 +1479,31 @@ section.light {
     color: #4D4E53;
 
 }
+
+#content .notice {
+    text-align: left;
+    background: #8A241B;
+    border: 1px solid #710B02;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+
+#content .notice p {
+    padding: 0.4em;
+}
+
+#content .notice p.summary {
+    font-weight: bold;
+}
+
+#content .notice p.link {
+    text-align: center;
+}
+
+#content .notice p.link a {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+    font-weight: normal;
+}
